@@ -26,7 +26,7 @@ public class Main {
     }
 
     private static StringBuilder reverse(String e) {
-        HashMap<String, String> map = new LinkedHashMap<>(){{
+        Map<String, String> map = new LinkedHashMap<>(){{
             put("<", ">");
             put("[", "]");
             put("{", "}");
@@ -52,6 +52,4 @@ public class Main {
     private static int fndLongest(List<String> list) {
         return list.stream().max(Comparator.comparing(String::length)).get().length();
     }
-
-
 }
